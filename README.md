@@ -95,8 +95,10 @@ The complete EgoNav platform consists of both the high-level navigation stack pr
 
 ```
 GIT/
-├── navigate.py      # Main navigation controller and control loop
-├── ego_state.py     # Stateful Ego-Context Memory and VLM inference
+|--Bot Cam/
+        |--- camcontrol.py
+├── navigate.py
+├── ego_state.py
 └── README.md
 ```
 
@@ -144,7 +146,7 @@ During VLM inference (typically 4–7 s per call), the **momentum controller** r
 ### Hardware
 
 - **Host:** Consumer laptop with a GPU (for VLM inference via Ollama)
-- **Robot:** Raspberry Pi 5 with three USB cameras (OV2710) and a differential-drive motor controller
+- **Robot:** Raspberry Pi 5 with three USB cameras and a differential-drive motor controller
 - **Network:** WiFi connection between host and robot
 
 ---
@@ -232,9 +234,3 @@ The companion repository provides:
 - Embedded Raspberry Pi operation
 
 Together, the two repositories form the complete EgoNav platform. Reviewers and researchers can access both to reproduce or extend the full system.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
