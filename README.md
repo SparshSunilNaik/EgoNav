@@ -209,6 +209,40 @@ python navigate.py
 
 ---
 
+### Memory Summary Passed to the VLM
+
+```text
+Goal: Find the chair
+
+Past Observations:
+- Chair was previously observed on the right side.
+- Robot has already turned right once.
+- Chair is becoming larger in view.
+
+Current Strategy:
+Continue approaching the chair while maintaining center alignment.
+```
+
+This allows navigation decisions to be grounded in temporal context rather than a single frame.
+
+---
+
+## Design Philosophy
+
+Unlike end-to-end Vision-Language-Action systems, EgoNav adopts a hybrid architecture.
+
+End-to-end VLA models often require large robot datasets, expensive training pipelines, and significant compute resources. EgoNav instead uses a frozen VLM for semantic reasoning while deterministic modules handle safety, obstacle avoidance, and motor execution.
+
+This design provides:
+
+- Zero-shot deployment
+- Improved interpretability
+- Lower compute requirements
+- Hardware accessibility
+- Safer navigation behavior
+- Easier debugging and system analysis
+
+---
 ## Limitations
 
 - Designed for **indoor environments** with relatively stable lighting conditions.
