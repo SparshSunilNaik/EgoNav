@@ -27,7 +27,7 @@ EgoNav is organized into three layers that separate perception, reasoning, and a
 
 ### Robot Layer
 
-The robot layer runs on a **Raspberry Pi 5** and handles sensing and motor execution.
+The robot layer runs on a **Raspberry Pi 5** and handles sensing and motor execution:
 
 - Three USB cameras (OV2710 sensors) mounted at −30°, 0°, and +30° azimuth
 - Differential-drive motor controller for discrete movement pulses
