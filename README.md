@@ -83,7 +83,7 @@ The complete EgoNav platform consists of both the high-level navigation stack pr
 - **Position-based YOLO obstacle avoidance** — reactive collision prevention independent of VLM latency
 - **Two-phase goal approach** — coarse navigation followed by fine-grained final-stop precision
 - **Person safety detection** — detects and avoids people in the robot's path
-- **Real-time operation** — 12.5 Hz control loop with 45 ms mean action latency
+- **Real-time operation** — 12.5 Hz control loop with 45 ms mean action latency.
 - **Voice and CLI goal input** — set goals by typing or speaking
 - **Manual override** — WASD keyboard control for direct teleoperation
 - **Multiple goal modes** — *approach*, *avoid*, and *around* modes for flexible task specification
